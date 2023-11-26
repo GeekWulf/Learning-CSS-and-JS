@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta htpp-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Apple collector</title>
+    <link rel="stylesheet" href="css/game.css">
+</head>
+<body>
+    
+    <ui id = "ScoreBoard">
+        <li>Time Left: <span id="time">30</span></li>
+        <li><button onclick="startGame();" id="btn">PLAY!</button></li>
+        <li>Score: <span id="score">0</span></li>
+    </ui>
+
+    <div id="scene">
+        <img src="sprites/ground.png" id="ground">
+        <img src="sprites/tree.png" id="tree">
+        <img style="top: 200px; left: 100px;" onclick="fallDown(this)" src="sprites/apple.png" class="apple">
+        <img style="top: 210px; left: 220px;" onclick="fallDown(this)" src="sprites/apple.png" class="apple">
+        <img style="top: 210px; left: 145px;" onclick="fallDown(this)" src="sprites/apple.png" class="apple">
+        <img style="top: 200px; left: 195px;" onclick="fallDown(this)" src="sprites/apple.png" class="apple">
+        <img style="top: 215px; left: 260px;" onclick="fallDown(this)" src="sprites/apple.png" class="apple">
+    </div>
+
+    <p style="width: 400px; margin: 0 auto;">Hi: <span id="high">0</span></p>
+
+    <script src="js/GameController.js"></script>
+</body>
+</html>
