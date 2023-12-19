@@ -7,7 +7,7 @@ body {
 #scene {
     width: 400px;
     height: 400px;
-    background-color: aquamarine;
+    background-color: rgb(141, 206, 244);
     overflow: hidden;
     margin: 16px auto;
     position: relative;
@@ -32,7 +32,7 @@ body {
 
 .apple {
     position: absolute;
-    width: 16px;
+    width: 32px;
     height: auto;
     transition: top .5s ease;
 }
