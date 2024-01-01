@@ -9,13 +9,14 @@
 </head>
 <body>
     
-    <ui id = "ScoreBoard">
-        <li>Time Left: <span id="time">30</span></li>
-        <li><button onclick="startGame();" id="btn">PLAY!</button></li>
-        <li>Score: <span id="score">0</span></li>
-    </ui>
-
     <div id="scene">
+
+        <ui id = "ScoreBoard">
+            <li>Time Left: <span id="time">30</span></li>
+            <li><button onclick="startGame();" id="btn">PLAY!</button></li>
+            <li>Score: <span id="score">0</span></li>
+        </ui>
+
         <img src="sprites/8-bits-tree.png" id="tree">
         <img src="sprites/8-bit-ground.png" id="ground">
         <img style="top: 200px; left: 100px;" onclick="fallDown(this)" src="sprites/8-bit-apple.png" class="apple">
@@ -25,7 +26,7 @@
         <img style="top: 185px; left: 260px;" onclick="fallDown(this)" src="sprites/8-bit-apple.png" class="apple">
     </div>
 
-    <p style="width: 400px; margin: 0 auto;">Hi: <span id="high">0</span></p>
+    <p style="width: 400px; margin: 0 auto;">High score: <span id="high">0</span></p>
 
     <script src="js/GameController.js"></script>
 </body>
