@@ -1,11 +1,9 @@
 var score = 0,
     highScore = 0,
     time = 30,
-    timer;
-
-var IsPlaying = false;
-
-var timeBoard = document.getElementById('time'),
+    timer,
+    IsPlaying = false,
+    timeBoard = document.getElementById('time'),
     scoreboard = document.getElementById('score'),
     btnStart = document.getElementById('btn');
 
@@ -48,7 +46,6 @@ function startGame() {
     btnStart.disable = "disable";
     IsPlaying = true;
     renderScore();
-
     timer = setInterval(countDown, 1000);
 }
 
